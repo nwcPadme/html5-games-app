@@ -1,0 +1,52 @@
+	<ion-view view-title=" Dashboard" hide-nav-bar="false" >
+		<!-- popover -->
+		<ion-nav-buttons side="right">
+			<button class="button button-icon button-clear ion-android-more-vertical" id="menu-popover" ng-click="popover.show($event)"></button>
+		</ion-nav-buttons>
+		<!-- ./popover -->
+		<ion-nav-title> Dashboard</ion-nav-title>
+		<!-- content -->
+		<ion-content delegate-handle="top" lazy-scroll  id="page-dashboard" class=" page-dashboard">
+		
+		<div class="dashboard-panel">
+			<!-- row -->
+			<div class="row">
+				<a class="col-33 no-border light positive-bg ink" ng-href="#/html5_games_app/dashboard" >
+					<i class="icon ion-ios-home" ></i>
+					<p>{{ "Home" | translate }}</p>
+				</a>
+				<a class="col-33 no-border light positive-900-bg ink"  ng-href="#/html5_games_app/games" >
+					<i class="icon ion-ios-game-controller-b" ></i>
+					<p>{{ "Games" | translate }}</p>
+				</a>
+				<a class="col-33 no-border light calm-bg ink"  ng-href="#/html5_games_app/exchange" >
+					<i class="icon ion-cash" ></i>
+					<p>{{ "Exchange" | translate }}</p>
+				</a>
+			</div>
+			<!-- ./row -->
+			
+
+			<!-- row -->
+			<div class="row">
+				<a class="col-33 no-border light calm-900-bg ink"  ng-href="#/html5_games_app/faq" >
+					<i class="icon ion-help" ></i>
+					<p>{{ "FAQ" | translate }}</p>
+				</a>
+				<a class="col-33 no-border light balanced-bg ink"  ng-href="#/html5_games_app/user_profile" >
+					<i class="icon ion-android-contact" ></i>
+					<p>{{ "Profile" | translate }}</p>
+				</a>
+			</div>
+			<!-- ./row -->
+			
+
+		</div>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+
+		</ion-content>
+		<!-- ./content -->
+	</ion-view>

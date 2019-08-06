@@ -1,0 +1,36 @@
+	<ion-view view-title=" Admob Code" hide-nav-bar="false" >
+		<!-- popover -->
+		<ion-nav-buttons side="right">
+			<button class="button button-icon button-clear ion-android-more-vertical" id="menu-popover" ng-click="popover.show($event)"></button>
+		</ion-nav-buttons>
+		<!-- ./popover -->
+		<ion-nav-title> Admob Code</ion-nav-title>
+		<!-- content -->
+		<ion-content delegate-handle="top" lazy-scroll  id="page-admob" class=" page-admob">
+		
+    <div class="padding">
+        <div ng-repeat="item in data_admobs">
+            <div ng-if="item.ad_format=='banner'">
+                    <span>Banner</span><br/>
+                    <strong>(#ID{{ item.ad_id }}) {{ item.ad_unit_name }}</strong><br/>
+                    <span>{{ item.ad_unit_id }}</span><br/><br/>
+            </div>
+           
+            <div ng-if="item.ad_format=='interstitial'">
+                    <span>Interstitial</span><br/>
+                    <strong>(#ID{{ item.ad_id }}) {{ item.ad_unit_name }}</strong><br/>
+                    <span>{{ item.ad_unit_id }}</span><br/><br/>
+            </div>
+           
+            <div ng-if="item.ad_format=='rewardvideo'">
+                    <span>Reward Video</span><br/>
+                    <strong>(#ID{{ item.ad_id }}) {{ item.ad_unit_name }}</strong><br/>
+                    <span>{{ item.ad_unit_id }}</span><br/><br/>
+            </div>
+                        
+        </div>
+    </div>
+ 
+		</ion-content>
+		<!-- ./content -->
+	</ion-view>

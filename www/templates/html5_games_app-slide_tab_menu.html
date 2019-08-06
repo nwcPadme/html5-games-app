@@ -1,0 +1,45 @@
+	<ion-view view-title=" Menu" hide-nav-bar="false" >
+		<!-- popover -->
+		<ion-nav-buttons side="right">
+			<button class="button button-icon button-clear ion-android-more-vertical" id="menu-popover" ng-click="popover.show($event)"></button>
+		</ion-nav-buttons>
+		<!-- ./popover -->
+		<ion-nav-title> Menu</ion-nav-title>
+		<!-- content -->
+		<ion-content delegate-handle="top" lazy-scroll  id="page-slide_tab_menu" class=" page-slide_tab_menu">
+		
+	<div style="width: 100%;height:100%;">
+		<ion-slide-box class="ion-slide-tabs" slide-tabs-scrollable="false" show-pager="false" ion-slide-tabs>
+			<ion-slide ion-slide-tab-label="Home" >
+					<ion-content scroll="false" class="slidingTabContent">
+						<div class="list">
+							<a class="item item-icon-left" ng-href="#/html5_games_app/games" >
+								<i class="icon ion-android-favorite" ></i>
+								<h2>{{ "Games" | translate }}</h2>
+								<span class="item-note pull-left">Example Menu 1</span>
+							</a>
+							<a class="item item-icon-left" ng-href="#/html5_games_app/exchange" >
+								<i class="icon ion-android-favorite" ></i>
+								<h2>{{ "Exchange" | translate }}</h2>
+								<span class="item-note pull-left">Example Menu 2</span>
+							</a>
+						</div>
+					</ion-content>
+			</ion-slide>
+			<ion-slide ion-slide-tab-label="Help" >
+					<ion-content scroll="false" class="slidingTabContent">
+						<div class="list">
+							<a class="item item-icon-left" ng-href="#/html5_games_app/profile" >
+								<i class="icon ion-android-chat" ></i>
+								<h2>{{ "Profile" | translate }}</h2>
+								<span class="item-note pull-left">FAQs and Tutorial</span>
+							</a>
+						</div>
+					</ion-content>
+			</ion-slide>
+		</ion-slide-box>
+	</div>
+
+		</ion-content>
+		<!-- ./content -->
+	</ion-view>
